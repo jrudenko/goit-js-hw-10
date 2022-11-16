@@ -8,6 +8,8 @@ import templateFunctionInfo from './templates/country-info.hbs';
 const DEBOUNCE_DELAY = 300;
 let getEl = selector => document.querySelector(selector);
 
+// Handlebars.registerHelper('objValues', Object.values);
+
 getEl('#search-box').addEventListener(
   'input',
   debounce(onCountryInput, DEBOUNCE_DELAY)
