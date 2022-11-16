@@ -1,21 +1,18 @@
 
 <table >
-    <tr class="country-info__list">
+    <tr class="country-info">
         <td>
             <p class="capital"><span class="text"><b>Capital: </b></span>{{capital}}</p>
         </td>
     </tr>
-    <tr class="country-info__list">
+    <tr class="country-info">
         <td>
             <p class="population"><span class="text"><b>Population: </b></span>{{population}}</p>
         </td>
     </tr>
-    <tr class="country-info__list">
+    <tr class="country-info">
         <td>
-            <p class="country__data"><span class="country__text"><b>Languages: </b></span>{{#each languages}} <span
-                    class="country__lang-text">{{name}}</span> {{/each}}</p>
+            <p class="country"><span class="text"><b>Languages: </b></span>{{#each languages}} {{name}}{{/each}}</p>
         </td>
     </tr>
 </table>
-
-    {{!-- <p class="country__data"><b>Languages: </b>${Object.values(languages).join(', ')}</p> --}}
